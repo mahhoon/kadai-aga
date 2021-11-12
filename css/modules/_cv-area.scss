@@ -1,0 +1,149 @@
+//CVエリア
+.cv-area {
+    max-width: 1052px;
+    padding: 50px 0 56px;
+    background-color: $light-orange;
+    text-align: center;
+    margin: 0 auto;
+    @include sp {
+        padding-left: 20px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    
+    &__title {
+        color: $orange;
+        font-size: 3rem;
+        font-feature-settings: "palt" 1;
+        line-height: 1.2;
+        font-weight: 700;
+        margin-bottom: 40px;
+        position: relative;
+        display: inline-block;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            left: 100%;
+            top: 50%;
+            margin-left: 15px;
+            margin-top: -20px;
+            width: 2px;
+            height: 40px;
+            background-color: $orange;
+            transform:rotate(20deg);
+        }
+        &::before {
+            content:'';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-left: -18px;
+            margin-top: -20px;
+            width: 2px;
+            height: 40px;
+            background-color: $orange;
+            transform:rotate(-20deg);
+        }
+        
+        @include sp {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            &::after, &::before {
+                height: 45px;
+                margin-top: -20px;
+            }
+            &::after {
+                margin-left: 6px;
+            }
+            &::before {
+                margin-left: -10px;
+            }
+        }
+    }
+    
+    &__point {
+        font-size: 5.3rem;
+        font-weight: 700;
+        font-feature-settings: "palt" 1;
+        letter-spacing: -0.02em;
+        position: relative;
+        margin: 0 auto 20px;
+        display: inline-block;
+        
+        p {
+            text-align:left;
+            &::before {
+                content: '';
+                position: absolute;
+                display: inline-block;
+                top: 17px;
+                margin-left: -29px;
+                box-sizing: border-box;
+                border-top: 9px solid transparent;
+                border-bottom: 9px solid transparent;
+                border-left: 18px solid $orange;
+            }
+        }
+        
+        @include sp {
+            font-size: 2.6rem;
+            line-height: 1.1;
+            margin-bottom: 12px;
+            p::before {
+                top: 8px;
+                margin-left: -12px;
+                border-top: 5px solid transparent;
+                border-bottom: 5px solid transparent;
+                border-left: 10px solid $orange;
+            }
+        }
+    }
+    
+    &__samall-letter {
+        font-size: 4.2rem;
+        @include sp {
+            font-size: 2rem;
+        }
+    }
+}
+.cv-btn {
+    max-width: 485px;
+    height: 93px;
+    margin: 10px auto 0;
+    font-size: 4rem;
+    line-height: 95px;
+    border-radius: 47px;
+    position: relative;
+    box-shadow: 0 10px darken($orange, 8%);
+    
+    &::after {
+        content: '';
+        position: absolute;
+        height: 14px;
+        width: 14px;
+        border-top: 3px solid #fff;
+        border-right: 3px solid #fff;
+        top: 40px;
+        right: 25px;
+        transform: rotate(45deg);
+    }
+    
+    @include sp {
+        width: 306px;
+        height: 59px;
+        line-height: 59px;
+        font-size: 2.6rem;
+        box-shadow: 0 9px darken($orange, 8%);
+        margin-top: 9px;
+        
+        &::after {
+            height: 10px;
+            width: 10px;
+            border-top: 2px solid #fff;
+            border-right: 2px solid #fff;
+            top: 22px;
+            right: 17px;
+        }
+    }
+}

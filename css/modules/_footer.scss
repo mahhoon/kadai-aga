@@ -1,0 +1,27 @@
+.footer {
+    text-align: center;
+    padding: 40px 0;
+    @include sp {
+        padding: 23px 0;
+    }
+}
+
+.footer-logo-block {
+    @include flex;
+    align-items: center;
+    
+    .header-logo {
+            width: 188px;
+        } 
+    
+    @include sp {
+        .tag-line {
+            padding: 3px;
+        }
+        .header-logo {
+            width: 97px;
+            margin-right: 5px;
+        } 
+    }
+
+}

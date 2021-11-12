@@ -1,0 +1,329 @@
+.dedails-content {
+    padding: 64px 0;
+    @include sp {
+        padding: 25px 0;
+    }
+}
+
+.details-background {
+    background-color: $pale-blue;
+    padding-bottom: 30px;
+}
+
+//what-aga
+.what-aga-content {
+    @include pc {
+        @include flex;
+        margin-top: 45px;
+        margin-bottom: 40px;
+    }
+    @include sp {
+        margin: 32px 0 20px;
+    }
+}
+.what-aga-card {
+    width: 485px;
+    margin-right: 28px;
+    @include sp {
+        margin: 0 auto 10px;
+        width: 281px;
+    }
+
+    &:last-child {
+        margin-left: 28px;
+        @include sp {
+            margin: 0 auto;
+        }
+    }
+    
+    &__titlebar {
+        height: 88px;
+        background-color: #d3d3d3;
+        font-size: 4rem;
+        color: #fff;
+        border: 1px solid #a9a9a9;
+        @include flex;
+        justify-content: space-between;
+        align-items: center;
+        @include sp {
+            font-size: 2.4rem;
+            height: 44px;
+        }
+    }
+    &__number {
+        width: 64px;
+        height: 64px;
+        background-color: #fff;
+        border-radius: 50%;
+        color: $aqua-blue;
+        font-size: 4.2rem;
+        font-feature-settings: "palt" 1;
+        line-height: 64px;
+        margin: 0 16px 0 8px;
+        display: inline-block;
+        text-align: center;
+        @include sp {
+            margin-right: 8px;
+            width: 35px;
+            height: 35px;
+            font-size: 2.4rem;
+            line-height: 35px;
+        }
+    }
+    &__answer {
+        height: 235px;
+        border-radius: 10px;
+        border: 1px solid #222;
+        background-color: #fff;
+        margin-top: 8px;
+        display: flex;
+        align-items: center;
+        p{
+            font-size: 4.8rem;
+            font-feature-settings: "palt" 1;
+            line-height: 1.4;
+            margin: 0 auto;
+            letter-spacing: 0.03em;
+        }
+        @include sp {
+            height: 115px;
+            margin-top: 5px;
+            border-radius: 5px;
+            p {
+                font-size: 2.4rem;
+            }
+            .sp-small {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+//アコーディオンボタン
+.acordion-btn-blue {
+    position:relative;
+    width: 48px;
+    height: 48px;
+    background-color: $sky-blue;
+    cursor: pointer;
+    margin-right: 10px;
+    border: 1px solid darken($sky-blue, 10%);
+    @include sp {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+.acordion-btn-blue::before, .acordion-btn-blue::after {
+    position: absolute;
+    top: 21px;
+    left: 50%;
+    content: '';
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border-top: 4px solid #fff;
+    margin-left: -13px;
+    @include sp {
+        top: 11px;
+        width: 14px;
+        height: 14px;
+        margin-left: -7px;
+        border-top: 2px solid #fff;
+    }
+}
+
+.acordion-btn-blue::after {
+    top: 8px;
+    left: 10px;
+    transform: rotate(90deg);
+    @include sp {
+        top: 4px;
+        left: 5px;
+    }
+}
+
+//治療表
+.treatmentdetails-content {
+    margin: 50px 0 40px;
+    @include sp {
+        margin: 25px 0 15px;
+    }
+}
+
+//症例写真
+.detailes-2 {
+    margin-top: 70px;
+    @include sp {
+        margin-top: 0;
+    }
+}
+
+.case-content-pc {
+    @include pc {
+        @include flex;
+        justify-content: space-between;
+        width: 900px;
+        margin-top: 50px;
+    }
+}
+
+.case-content-sp {
+    margin: 20px 0;
+}
+
+.case-photo-wrap {
+    @include flex;
+    justify-content: space-between;
+    width: 431px;
+    position: relative;
+    margin-bottom: 37px;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        width: 48px;
+        height: 2px;
+        background-color: #666;
+        top: 55%;
+        left: 50%;
+        margin-left: -24px;
+    }
+}
+
+.case-photo-wrap-sp {
+    @include flex;
+    justify-content: space-between;
+    max-width: 349px;
+    position: relative;
+    margin: 0 auto;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 2px;
+        background-color: #666;
+        top: 55%;
+        left: 50%;
+        margin-left: -20px;
+    }
+}
+
+.case-photo-item {
+    text-align: center;
+    @include sp {
+        width: 46%;
+    }
+    
+    &__case-text {
+        font-size: 1.8rem;
+        padding-bottom: 15px;
+        @include sp {
+            padding: 15px 0 13px;
+            font-size: 1.5rem;
+        }
+    }
+    &__case-phoho {
+        @include sp {
+            max-width: 100%;
+        }
+    }
+    
+
+}
+
+//Q&A
+.qa-content {
+    padding-top: 30px;
+    margin: 50px 0 32px;
+    @include sp {
+        margin: 10px 13px;
+    }
+}
+
+.qa-item {
+    padding: 0 183px;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    margin-bottom: 75px;
+    @include sp {
+        padding: 0;
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+    }
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    
+    &__q {
+        color: $pale-orange;
+        border-bottom: 1px solid #222;
+        padding-bottom: 8px;
+        @include flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        P {
+            width: 85%;
+        }
+        @include sp {
+            padding-bottom: 4px;
+            p {
+               width: 90%; 
+            }
+        }
+    }
+    
+    &__a {
+        padding-top: 8px;
+        @include sp {
+            padding-top: 4px;
+        }
+    }
+}
+
+//QAアコーディオンボタン
+.acordion-btn-orange {
+    position:relative;
+    width: 30px;
+    height: 30px;
+    background-color: $pale-orange;
+    cursor: pointer;
+    margin-right: 10px;
+    @include sp {
+        width: 14px;
+        height: 14px;
+        margin-right: 5px;
+    }
+}
+
+.acordion-btn-orange::before, .acordion-btn-orange::after {
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-top: 2px solid #fff;
+    margin-left: -7px;
+    @include sp {
+        width: 6px;
+        height: 6px;
+        top: 6px;
+        margin-left: -3px;
+        border-top: 1px solid #fff;
+    }
+}
+
+.acordion-btn-orange::after {
+    top: 7px;
+    left: 8px;
+    transform: rotate(90deg);
+    @include sp {
+        top: 3px;
+        left: 4px;
+    }
+}

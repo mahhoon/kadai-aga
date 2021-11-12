@@ -1,0 +1,270 @@
+//特徴エリア
+//5つの特徴
+.benefit-title {
+    text-align: center;
+    margin-top: 70px;
+    font-size: 5.6rem;
+    letter-spacing: 0.2em;
+    
+    @include sp {
+        font-size: 3.5rem;
+        letter-spacing: 0.1em;
+        margin-top: 39px;
+    }
+}
+
+//price
+.price-wrap {
+    @include pc {
+        @include flex;
+        align-items: center;
+    }
+}
+.price-title, .price {
+    width: 500px;
+    @include sp {
+        width: 100%;
+    }
+}
+.price-phase {
+    display: inline-block;
+    font-size: 3.6rem;
+    padding: 7px 38px;
+    background-color: $sky-blue;
+    color: #fff;
+    
+    @include sp {
+        font-size: 2.4rem;
+        font-weight: 700;
+        padding: 3px 15px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        margin-top: -8px;
+    }
+}
+.price-note {
+    color: $sky-blue;
+    font-size: 1.8rem;
+    margin-top: 8px;
+    margin-bottom: 30px;
+    
+    @include sp {
+        font-size: 1.5rem;
+        border: 1px solid $sky-blue;
+        padding: 0 5px;
+        display: inline-block;
+    }
+}
+.price {
+    font-size: 12.6rem;
+    color: $sky-blue;
+    margin-bottom: 20px;
+    @include sp {
+        font-size: 3rem;
+        margin-bottom: 5px;
+    }
+}
+.yen {
+    font-size: 0.48em;
+    @include sp {
+        font-size: 1.8rem;
+    }
+}
+.kara {
+    font-size: 6rem;
+    color: $sky-blue;
+    height: 60px;
+    line-height: 50px;
+}
+
+//テキスト
+.benefit-item-center {
+    display: inline-block;
+    text-align: center;
+    padding: 0 25px;
+    @include sp {
+        padding: 0 48px;
+    }
+}
+.benefit-item__text {
+    font-size: 2.4rem;
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+    @include sp {
+        font-size: 1.5rem;
+    }
+        
+    &-notice {
+        font-size: 2.2rem;
+        text-align: left;
+        line-height: 2;
+        margin-bottom: 15px;
+        @include sp {
+            font-size: 1.1rem;
+            margin-top: -14px;
+        }
+    }
+    &-left {
+         @include sp {
+            text-align: left;
+            margin: 0 13px 11px;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+    }
+    &-center {
+        text-align: center;
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+    &-address {
+        text-align: center;
+        font-feature-settings: "palt" 1;
+        @include sp {
+            font-size: 1.6rem;
+            margin: 13px;
+        }
+    }
+}
+
+//doctors
+.doctors-card-wrap {
+    @include pc {
+        @include flex;
+    }
+}
+
+.doctors-card {
+    max-width: 320px;
+    margin: 0 10px;
+    background-color: $pale-blue;
+    padding: 32px 20px;
+    
+    @include sp {
+        max-width: 100%;
+        margin: 0 13px 12px;
+        padding: 10px;
+        @include flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        
+        img {
+            width: 70px;
+            margin-right: 17px;
+        }
+        &__textwrap {
+            flex: 1;
+        }
+    }
+    
+    &__name {
+        padding: 8px 0 20px;
+        font-size: 1.8rem;
+        line-height: 2;
+        @include sp {
+            font-size: 1.5rem;
+            padding: 0;
+            text-align: left;
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+    }
+    
+    &__text {
+        text-align: left;
+        font-size: 1.4rem;
+        line-height: 1.5;
+        @include sp {
+            font-size: 1.1rem;
+        }
+    }
+    
+    .license {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+}
+
+//map
+#map {
+    max-width: 1080px;
+    height: 526px;
+    margin: 70px 0 20px;
+    @include sp {
+        max-width: 100%;
+        height: 192px;
+        margin: 0 13px;
+    }
+}
+
+//診察時間
+.weekly-table {
+    max-width: 560px;
+    height: 126px;
+    margin: 20px auto 50px;
+    font-size: 2.4rem;
+    @include sp {
+        margin: 0 auto 22px;
+        width: 283px;
+        font-size: 1.2rem;
+        height: 60px;
+    }
+    
+    th, td {
+        vertical-align: middle;
+        width: 70px;
+    }
+    
+    &__header {
+        background-color: $sky-blue;
+    }
+    
+    &__content {
+        border-bottom: 3px solid #222;
+        @include sp {
+            border-bottom: 2px solid #222;
+        }
+    }
+    
+    &__time {
+        text-align: left;
+    }
+    
+    &__holiday {
+        color: #ff0000;
+    }
+}
+
+//院内写真
+.clinic {
+    margin: 0 auto 70px;
+    @include flex;
+    @include sp {
+        display: block;
+        margin-bottom: 28px;
+    }
+}
+.clinic-ph {
+    margin-right: 110px;
+    width: 400px;
+    height: 322px;
+    @include sp {
+        width: 195px;
+        margin: -8px auto 0;
+    }
+}
+.clinic-description {
+    font-size: 2.4rem;
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+    text-align: left;
+    width: 30%;
+    padding-top: 25px;
+    @include sp {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        padding-top: 10px;
+    }
+}

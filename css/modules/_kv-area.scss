@@ -1,0 +1,69 @@
+//kvエリア
+.kv {
+    max-width: 100%;
+    @include pc {
+        height: 478px;
+    }
+    @include sp {
+        height: 240px;
+    }
+    background-image: url("../img/kv.jpg");
+    @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
+        background-image: url("../img/kv@2x.jpg");
+    }
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.kv-area-copy {
+    margin-left: 65px;
+    vertical-align: middle;
+    @include sp {
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    &__keymessage {
+        font-size: 6rem;
+        color: #fff;
+        letter-spacing: 0.25em;
+        line-height: 1.2;
+        margin-bottom: 42px;
+        @include sp {
+            font-size: 3.4rem;
+            font-weight: 555;
+            margin-bottom: 17px;
+        }
+    }
+    
+    &__appendlogo {
+        font-size: 2.4rem;
+        letter-spacing: 0.05em;
+        color: #fff;
+        margin-bottom: 16px;
+        @include sp {
+            font-size: 1.7rem;
+            margin-bottom: 11px;
+        }
+    }
+    
+    @include sp {
+         &__logo {
+            width: 122px;
+        }
+    }
+    
+    .dot {
+        color: $yellow;
+        position: relative;
+    }
+    .dot::before {
+        content: "・";
+        position: absolute;
+        top: -1em;
+        left: 0;
+    }
+}

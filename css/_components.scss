@@ -1,0 +1,150 @@
+//btn
+.btn {
+    background-color: $orange;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-feature-settings: "palt" 1;
+    cursor: pointer;
+}
+
+//table
+.treatment-table {
+    text-align: left;
+    margin: 20px auto;
+    @include sp {
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    &__entry {
+        width: 250px;
+        font-size: 2.2rem;
+        background-color: #ddd;
+        padding-left: 20px;
+        vertical-align: middle;
+        border-right: 4px solid #fff;
+        border-bottom: 4px solid #fff;
+        @include sp {
+            font-size: 1.4rem;
+            padding-left: 10px;
+            line-height: 1.3;
+            border-bottom: 2px solid #fff;
+            border-right: 2px solid #fff;
+        }
+    }
+    &__content {
+        width: 546px;
+        font-size: 1.4rem;
+        background-color: #eee;
+        padding: 20px 25px;
+        vertical-align: middle;
+        line-height: 1.5;
+        border-bottom: 4px solid #fff;
+        @include sp {
+            padding: 9px;
+            font-size: 1.1rem;
+            border-bottom: 2px solid #fff;
+        }
+    }
+    &__heading {
+        height: 56px;
+        background-color: $sky-blue;
+        color: #fff;
+        font-size: 2.4rem;
+        font-feature-settings: "palt" 1;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 8px 8px 0 0;
+        border-bottom: 4px solid #fff;
+        @include sp {
+            font-size: 1.9rem;
+            height: 36px;
+            border-radius: 5px 5px 0 0;
+            border-bottom: 2px solid #fff;
+        }
+    }
+    
+}
+
+//benefit共通
+.benefit-item {
+    text-align: center;
+    
+    &__number {
+        font-size: 8rem;
+        color: #ccc;
+        margin: 30px 0 5px;
+        @include sp {
+            font-size: 4.2rem;
+            margin: 13px 0 0;
+        }
+    }
+    
+    &__title {
+        font-size: 3.6rem;
+        margin-bottom: 35px;
+        font-feature-settings: "palt" 1;
+        @include sp {
+            font-size: 2.6rem;
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+    }
+    
+    &__title-s {
+        font-size: 0.65em;
+    }
+    
+    &__title-m {
+        font-size: 2.8rem;
+        margin-bottom: 37px;
+        @include sp {
+            font-size: 1.9rem;
+            margin-top: -12px;
+            margin-bottom: 15px;
+        }
+    }
+    
+    &-flex {
+        @include flex;
+    }
+    
+    &__title-cutmarginbottom {
+        margin-bottom: 26px;
+    }
+        
+}
+
+//details共通
+.details-title {
+    font-size: 5.6rem;
+    font-feature-settings: "palt" 1;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.1em;
+    position: relative;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        width: 140px;
+        height: 5px;
+        background-color: #666;
+        left: 50%;
+        top: 100%;
+        margin-left: -70px;
+        margin-top: 12px;
+    }
+    
+    @include sp {
+        font-size: 3.5rem;
+
+        &::after {
+            width: 70px;
+            height: 4px;
+            margin-left: -35px;
+            margin-top: 5px;
+        }
+    }
+}
