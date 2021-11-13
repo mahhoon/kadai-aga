@@ -62,6 +62,13 @@
         }
     }
     
+    &pointwrap {
+        @include sp {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    }
+    
     &__point {
         font-size: 5.3rem;
         font-weight: 700;

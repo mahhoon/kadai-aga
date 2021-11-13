@@ -21,7 +21,7 @@
         <div class="btn header__btn">無料カウンセリング</div>
     </header>
     <section class="kv-area container">
-        <div class="kv">
+        <div id="kv">
             <div class="kv-area-copy">
                 <h1 class="kv-area-copy__keymessage serif"><span class="dot">薄</span><span class="dot">毛</span>は進行度に<br>あわせた対策を!</h1>
                 <h2 class="kv-area-copy__appendlogo">発毛医療を専門とする医療機関</h2>
@@ -29,7 +29,7 @@
             </div>
         </div>
     </section>
-    <section class="service container">
+    <div class="service container">
         <ul class="service-item-wrap">
             <li class="service-item">
                 <img class="service-item__icon" src="img/service-icons/service-icon01.png" alt="連携" srcset="img/service-icons/service-icon01.png 1x,img/service-icons/service-icon01@2x.png 2x"/>
@@ -52,7 +52,7 @@
                 <p class="service-item__text"><span class="hilight">医師が</span><br>しっかりと<span class="hilight">診察</span></p>
             </li>
         </ul>
-    </section>
+    </div>
     <section class="cv container">
         <div class="cv-area">
             <div class="cv-area__title">
@@ -227,7 +227,9 @@
                         </div>
                         <div class="acordion-btn-blue"></div>
                     </div>
-                    <div class="what-aga-card__answer"><p>「男性型発毛症」<br><span class="sp-small">という</span><span class="lightcolordtext">病気</span><span class="sp-small">です。</span></p></div>
+                    <div class="slidetoggle">
+                        <div class="what-aga-card__answer"><p>「男性型発毛症」<br><span class="sp-small">という</span><span class="lightcolordtext">病気</span><span class="sp-small">です。</span></p></div>
+                    </div>
                 </div>
                 <div class="what-aga-card">
                     <div class="what-aga-card__titlebar">
@@ -237,7 +239,9 @@
                         </div>
                         <div class="acordion-btn-blue"></div>
                     </div>
-                    <div class="what-aga-card__answer"><p>最も大きな原因は、<br><span class="lightcolordtext">男性ホルモン</span><span class="sp-small">です。</span></p></div>
+                    <div class="slidetoggle">
+                        <div class="what-aga-card__answer"><p>最も大きな原因は、<br><span class="lightcolordtext">男性ホルモン</span><span class="sp-small">です。</span></p></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -364,49 +368,49 @@
                         <P >Q、△△療法前にパーマやカラーリングはできますか？</P>
                         <div class="acordion-btn-orange"></div>
                     </div>
-                    <P class="qa-item__a">A、最終施術後2時間を経過しましたら、パーマ・カラーリングはできます。</P>
+                    <P class="qa-item__a slidetoggle">A、最終施術後2時間を経過しましたら、パーマ・カラーリングはできます。</P>
                 </li>
                 <li class="qa-item">
                     <div class="qa-item__q">
                         <P >Q、△△療法の施術時間はどのくらいですか？</P>
                         <div class="acordion-btn-orange"></div>
                     </div>
-                    <P class="qa-item__a">A、施術範囲にもよりますが、<span class="colordtext">注入自体は約10分です</span>。トータルで30分ほどになります。</P>
+                    <P class="qa-item__a slidetoggle">A、施術範囲にもよりますが、<span class="colordtext">注入自体は約10分です</span>。トータルで30分ほどになります。</P>
                 </li>
                 <li class="qa-item">
                     <div class="qa-item__q">
                         <P >Q、△△療法の後、髪はセットできますか？洗髪は？</P>
                         <div class="acordion-btn-orange"></div>
                     </div>
-                    <P class="qa-item__a">A、清潔な状態で仕上げさせていただきます。</P>
+                    <P class="qa-item__a slidetoggle">A、清潔な状態で仕上げさせていただきます。</P>
                 </li>
                 <li class="qa-item">
                     <div class="qa-item__q">
                         <P >Q、△△療法を受けて毛髪再生したら、ずっと生えたままですか？</P>
                         <div class="acordion-btn-orange"></div>
                     </div>
-                    <P class="qa-item__a">A、育毛状態を保つためにも2～3ヵ月に1回程度の通院おすすめしています。</P>
+                    <P class="qa-item__a slidetoggle">A、育毛状態を保つためにも2～3ヵ月に1回程度の通院おすすめしています。</P>
                 </li>
                 <li class="qa-item">
                     <div class="qa-item__q">
                         <P >Q、△△療法で白髪は黒くなりますか？</P>
                         <div class="acordion-btn-orange"></div>
                     </div>
-                    <P class="qa-item__a">A、必ず黒くなるとは言えませんが、黒くなる可能性はあります。黒髪は△△療法で白くなることはありません。</P>
+                    <P class="qa-item__a slidetoggle">A、必ず黒くなるとは言えませんが、黒くなる可能性はあります。黒髪は△△療法で白くなることはありません。</P>
                 </li>
                 <li class="qa-item">
                     <div class="qa-item__q">
                         <P >Q、△△療法は必ず毛髪再生しますか？</P>
                         <div class="acordion-btn-orange"></div>
                     </div>
-                    <P class="qa-item__a">A、△△療法は飲み薬や塗り薬で効果が弱い方も、明らかな発毛を実感できます。</P>
+                    <P class="qa-item__a slidetoggle">A、△△療法は飲み薬や塗り薬で効果が弱い方も、明らかな発毛を実感できます。</P>
                 </li>
                 <li class="qa-item">
                     <div class="qa-item__q">
                         <P >Q、薄毛治療の飲み薬や塗り薬等の薄毛治療薬に比べて、△△療法は効果がありますか？</P>
                         <div class="acordion-btn-orange"></div>
                     </div>
-                    <P class="qa-item__a">A、△△療法の7年間の検証では、産毛が存在していた部位に対しては、<span class="colordtext">必ず毛髪の再生が認められています</span>。</P>
+                    <P class="qa-item__a slidetoggle">A、△△療法の7年間の検証では、産毛が存在していた部位に対しては、<span class="colordtext">必ず毛髪の再生が認められています</span>。</P>
                 </li>
             </ul>
         </div>
@@ -440,5 +444,8 @@ var Options = {
 };
 var map = new google.maps.Map(document.getElementById('map'), Options);
 </script>
+<script> </script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

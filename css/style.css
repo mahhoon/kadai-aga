@@ -243,24 +243,30 @@ body {
         border-top: 1px solid #fff;
         border-right: 1px solid #fff; } }
 
-.kv {
+#kv {
   max-width: 100%;
   background-image: url("../img/kv.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 70%;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  animation: showkv 2s cubic-bezier(0.81, 0.29, 0.58, 1); }
   @media screen and (min-width: 768px) {
-    .kv {
+    #kv {
       height: 478px; } }
   @media screen and (max-width: 767px) {
-    .kv {
+    #kv {
       height: 240px; } }
   @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-    .kv {
+    #kv {
       background-image: url("../img/kv@2x.jpg"); } }
 
+@keyframes showkv {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 .kv-area-copy {
   margin-left: 65px;
   vertical-align: middle; }
@@ -404,6 +410,10 @@ body {
           margin-left: 6px; }
         .cv-area__title::before {
           margin-left: -10px; } }
+  @media screen and (max-width: 767px) {
+    .cv-areapointwrap {
+      max-width: 500px;
+      margin: 0 auto; } }
   .cv-area__point {
     font-size: 5.3rem;
     font-weight: 700;
@@ -687,11 +697,17 @@ body {
 .clinic-ph {
   margin-right: 110px;
   width: 400px;
-  height: 322px; }
+  height: 322px;
+  opacity: 0;
+  transition: opacity 2s; }
   @media screen and (max-width: 767px) {
     .clinic-ph {
-      width: 195px;
+      width: 197px;
+      height: auto;
       margin: -8px auto 0; } }
+
+.clinic-ph-view {
+  opacity: 1; }
 
 .clinic-description {
   font-size: 2.4rem;
@@ -833,11 +849,19 @@ body {
 .acordion-btn-blue::after {
   top: 8px;
   left: 10px;
-  transform: rotate(90deg); }
+  transform: rotate(90deg);
+  opacity: 1;
+  transition: opacity .3s; }
   @media screen and (max-width: 767px) {
     .acordion-btn-blue::after {
       top: 4px;
       left: 5px; } }
+
+.acordion-btn-minus::after {
+  opacity: 0; }
+
+.slidetoggle {
+  display: none; }
 
 .treatmentdetails-content {
   margin: 50px 0 40px; }
@@ -898,6 +922,15 @@ body {
     top: 55%;
     left: 50%;
     margin-left: -20px; }
+
+.case-photo-wrap, .case-photo-wrap-sp {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s, transform 1s; }
+
+.case-photo-fadein {
+  opacity: 1;
+  transform: translateY(0); }
 
 .case-photo-item {
   text-align: center; }
