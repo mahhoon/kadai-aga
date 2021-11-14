@@ -699,7 +699,7 @@ body {
   width: 400px;
   height: 322px;
   opacity: 0;
-  transition: opacity 2s; }
+  transition: opacity 1.5s; }
   @media screen and (max-width: 767px) {
     .clinic-ph {
       width: 197px;
@@ -830,35 +830,22 @@ body {
 
 .acordion-btn-blue::before, .acordion-btn-blue::after {
   position: absolute;
-  top: 21px;
-  left: 50%;
   content: '';
-  display: inline-block;
+  display: block;
+  background: #fff;
+  left: 50%;
+  top: 50%;
+  height: 4px;
   width: 26px;
-  height: 26px;
-  border-top: 4px solid #fff;
-  margin-left: -13px; }
+  transform: translate(-50%, -50%); }
   @media screen and (max-width: 767px) {
     .acordion-btn-blue::before, .acordion-btn-blue::after {
-      top: 11px;
-      width: 14px;
-      height: 14px;
-      margin-left: -7px;
-      border-top: 2px solid #fff; } }
+      height: 2px;
+      width: 14px; } }
 
 .acordion-btn-blue::after {
-  top: 8px;
-  left: 10px;
-  transform: rotate(90deg);
-  opacity: 1;
-  transition: opacity .3s; }
-  @media screen and (max-width: 767px) {
-    .acordion-btn-blue::after {
-      top: 4px;
-      left: 5px; } }
-
-.acordion-btn-minus::after {
-  opacity: 0; }
+  transform: translate(-50%, -50%) rotate(90deg);
+  transition: transform .5s; }
 
 .slidetoggle {
   display: none; }
@@ -1004,30 +991,25 @@ body {
 
 .acordion-btn-orange::before, .acordion-btn-orange::after {
   position: absolute;
-  top: 14px;
-  left: 50%;
   content: '';
-  display: inline-block;
+  display: block;
+  background: #fff;
+  left: 50%;
+  top: 50%;
+  height: 2px;
   width: 14px;
-  height: 14px;
-  border-top: 2px solid #fff;
-  margin-left: -7px; }
+  transform: translate(-50%, -50%); }
   @media screen and (max-width: 767px) {
     .acordion-btn-orange::before, .acordion-btn-orange::after {
-      width: 6px;
-      height: 6px;
-      top: 6px;
-      margin-left: -3px;
-      border-top: 1px solid #fff; } }
+      height: 1px;
+      width: 6px; } }
 
 .acordion-btn-orange::after {
-  top: 7px;
-  left: 8px;
-  transform: rotate(90deg); }
-  @media screen and (max-width: 767px) {
-    .acordion-btn-orange::after {
-      top: 3px;
-      left: 4px; } }
+  transform: translate(-50%, -50%) rotate(90deg);
+  transition: transform .3s; }
+
+.acordion-btn-minus::after {
+  transform: translate(-50%, -50%) rotate(180deg); }
 
 .footer {
   text-align: center;
